@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="section">
-        <h1>Etch-A-Sketch</h1>
-        <div class="container"></div>
-        <div class="buttons"></div>
-        <!-- <div class="footer">
-            <button class="btn-dark" id="btn-dark" onclick="changeColor('black')">Black</button>
-            <button class="btn-Random" id="btn-Random" onclick="changeColor('gray')">Gray</button>
-            <button class="btn-erasor" onclick="changeColor('white')">Erasor</button>
-            <button onclick="randomColor('random')">Random</button>
-            <input type="text" placeholder="size of board"  value="16" onchange="reSize(this.value)">
-            <button class="btn-Reset" id="btn-Reset" onclick="resetBoard()">Reset</button>
-            <button class="rgb-btn"id="rgb-btn">RGB</button>
-           
-        </div> -->
-
+     <div class="section">
+        <h1>Etch A Sketch</h1>
+    <div class="container"></div>
+    <div class="buttons">
+        <button class="colorBtn" onclick="changeColor('black')">Black</button>
+        <button class="colorBtn" onclick="changeColor('gray')">Gray</button>
+        <button class="colorBtn" onclick="changeColor('random')">Random</button>
+        <button class="colorBtn" onclick="changeColor('#e0e0e0')">Erase</button>
+        <button class="colorBtn" onclick="resetBoard()">Reset</button>
     </div>
-    
+    <div class="resize">
+        <input 
+        type="text" 
+        placeholder="Set Size: 2 - 100" 
+        onchange="changeSize(this.value)">
+        <button class="sizeBtn">Resize</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
