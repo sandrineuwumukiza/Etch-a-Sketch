@@ -12,6 +12,7 @@ function populate(col,row) {
   for (let i = 0; i < amount; i++) {
     let square = document.createElement("div");
     square.classList.add("cell");
+    square.style.border = '1px solid green'
     container.style.backgroundColor = "purple";
     
     square.addEventListener("mouseover", colorSquare);
